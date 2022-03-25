@@ -1,0 +1,40 @@
+<%- include('../partials/header.ejs')%>
+<article class="tradesMain" >
+   <% if(Object.keys(trades).length>0){ %>
+   
+ <% for(var i in trades){ %>
+
+        <h1> Refurbished <%= i %> </h1>
+        <div class="headphonesGrid">
+            <div class="grid-container-headphones">
+        
+        <%  trades[i].forEach(trade=>{ %>
+                <div class="cardView">
+                    <img src="<%=trade.image %>" alt="<%= trade.name %>" >
+					<h1><%= trade.name %></h1>
+					<p class="cost">$<%= trade.cost %></p>
+					<!-- <p>Some text about the Airpods..</p> -->
+                    <p class="detailTrade"><a href="/trades/<%= i %>/<%= trade.id %>" class="buttonViewDetails" > View Details</a> </p>
+                
+                </div>
+        
+       <% }); %>
+       
+         
+
+</div>
+</div> 
+    <%}%>
+
+    <%} else {%>
+        <p> No categories Left to Display, Add category using New Trades option</p>
+
+        <%   }%>
+</article>
+    <%- include('../partials/footer.ejs')%>
+
+
+
+
+
+

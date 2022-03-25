@@ -1,0 +1,98 @@
+
+<%- include('../partials/header.ejs')%>
+<article class="newTradesMain"  >
+		<div class="newTrades">
+      <h1>Make changes to the trade <%= trade.category%></h1>
+			<!-- <div class="container"> -->
+  <form action="/trades/<%= trade.category %>/<%= trade.id%>?_method=PUT"  method = 'POST' >	
+  <div class="eachRow">
+      <div class="firstColumn">
+        <label for="category">Category</label>
+      </div>
+      <div class="secondColumn">
+        <input type="text" id="category" name="category" placeholder="Category" required value="<%= trade.category%>" >
+      </div>
+  </div>	
+  
+  <div class="eachRow">
+    <div class="firstColumn">
+      <label for="name">Product Name</label>
+    </div>
+    <div class="secondColumn">
+      <input type="text" id="name" name="name" placeholder="Product Name" value="<%= trade.name%>">
+    </div>
+  </div>
+  <div class="eachRow">
+    <div class="firstColumn">
+      <label for="author">Author</label>
+    </div>
+    <div class="secondColumn">
+      <input type="text" id="author" name="author" placeholder="Author" value="<%= trade.author%>">
+    </div>
+  </div>
+ 
+   <div class="eachRow">
+    <div class="firstColumn">
+      <label for="cost">Cost</label>
+    </div>
+    <div class="secondColumn">
+      <input type="text" id="cost" name="cost" placeholder="Cost" value="<%= trade.cost%>">
+    </div>
+  </div>
+
+   <div class="eachRow">
+    <div class="firstColumn">
+      <label for="status">Status</label>
+    </div>
+    <div class="secondColumn">
+      <input type="text" id="status" name="status" placeholder="Status" required value="<%= trade.status %>">
+    </div>
+  </div>
+
+  <div class="eachRow">
+    <div class="firstColumn">
+      <label for="image">image URL</label>
+    </div>
+    <div class="secondColumn">
+      <input type="text" id="image" name="image" placeholder="Image URL" required value="<%= trade.image%>">
+    </div>
+  </div>
+
+  <div class="eachRow">
+    <div class="firstColumn">
+      <label for="condition">condition</label>
+    </div>
+    <div class="secondColumn">
+      <input type="text" id="condition" name="condition" placeholder="Condition" value="<%= trade.condition%>">
+    </div>
+  </div>
+
+  <div class="eachRow">
+    <div class="firstColumn">
+      <label for="company">company</label>
+    </div>
+    <div class="secondColumn">
+      <input type="text" id="company" name="company" placeholder="Company" value="<%= trade.company%>">
+    </div>
+  </div>
+  <div class="eachRow">
+      <div class="firstColumn">
+        <label for="details">Details</label>
+      </div>
+      <div class="secondColumn">
+        <textarea id="details" name="details" placeholder="Product Description" > <%= trade.details %> </textarea>
+      </div>
+  </div>
+  <br>
+  <div class="eachRow">
+    <input type="submit" value="Update Table"> 
+  </div>
+  </form>
+	</div>
+		
+	</article>
+<br>
+<br>
+<br>
+<%- include('../partials/footer.ejs')%>
+

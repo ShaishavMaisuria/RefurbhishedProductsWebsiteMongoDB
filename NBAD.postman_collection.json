@@ -1,0 +1,538 @@
+{
+	"info": {
+		"_postman_id": "9cd91ade-9524-4824-93d2-a05ac40d73ac",
+		"name": "NBAD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "website navigation play area",
+			"item": []
+		},
+		{
+			"name": "test play area",
+			"item": []
+		},
+		{
+			"name": "index",
+			"item": [
+				{
+					"name": "navigation",
+					"item": [
+						{
+							"name": "index",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "test",
+					"item": [
+						{
+							"name": "generalSite navigation test",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000//trades",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"",
+										"trades"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "about",
+			"item": [
+				{
+					"name": "navigation",
+					"item": [
+						{
+							"name": "about page",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/about",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"about"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "contact",
+			"item": [
+				{
+					"name": "navigation",
+					"item": [
+						{
+							"name": "contact page",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/contact",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"contact"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "trades",
+			"item": [
+				{
+					"name": "navigation",
+					"item": [
+						{
+							"name": "trades",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/trades",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"trades"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "test",
+					"item": [
+						{
+							"name": "trades page test",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/tradesdddddd",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"tradesdddddd"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "trade",
+					"item": [
+						{
+							"name": "navigation",
+							"item": [
+								{
+									"name": "each trade",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/trades/Headphones/1",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"trades",
+												"Headphones",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "edit page",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": []
+										},
+										"url": {
+											"raw": "http://localhost:3000/trades/Headphones/1/edit",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"trades",
+												"Headphones",
+												"1",
+												"edit"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "delete trade",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/trades/Headphones/1",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"trades",
+												"Headphones",
+												"1"
+											],
+											"query": [
+												{
+													"key": "",
+													"value": null,
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "edit trade put",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "Author",
+													"value": "shaishav",
+													"type": "text"
+												},
+												{
+													"key": "category",
+													"value": "sweet",
+													"type": "text"
+												},
+												{
+													"key": "image",
+													"value": "http://localhost:3000/images/watch.jpg",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://localhost:3000/trades/sweet/1?_method=PUT",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"trades",
+												"sweet",
+												"1"
+											],
+											"query": [
+												{
+													"key": "_method",
+													"value": "PUT"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "test",
+							"item": [
+								{
+									"name": "trade id check test",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/trades/Headphones/155555",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"trades",
+												"Headphones",
+												"155555"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "trade category check test",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/trades/Headphdones/1",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"trades",
+												"Headphdones",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "edit request id test",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/trades/Headphones/1555/edit",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"trades",
+												"Headphones",
+												"1555",
+												"edit"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "edit request category test",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/trades/Headphdsones/1/edit",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"trades",
+												"Headphdsones",
+												"1",
+												"edit"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "delete request category test",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/trades/Headdddphones/1",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"trades",
+												"Headdddphones",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "delete request id test",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/trades/Headphones/15555555",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"trades",
+												"Headphones",
+												"15555555"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "edit trade put category test",
+									"request": {
+										"method": "PUT",
+										"header": []
+									},
+									"response": []
+								},
+								{
+									"name": "edit trade put Id test",
+									"request": {
+										"method": "PUT",
+										"header": []
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "newtrade",
+			"item": [
+				{
+					"name": "navigation",
+					"item": [
+						{
+							"name": "create new trade",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/newTrade",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"newTrade"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "test",
+					"item": [
+						{
+							"name": "create new trade test",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						},
+						{
+							"name": "Send PostRequest new Trade",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "category",
+											"value": "lapt",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/trades/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"trades",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
