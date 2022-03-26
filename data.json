@@ -1,0 +1,51 @@
+
+    [
+        {
+            
+            "name": "Airpods",
+            "category": "Headphones",
+            "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industr",
+            "status": "availabl",
+            "image": "/images/airpodsMax.jpg",
+            "author": "Shaishav  Maisuria",
+            "condition": "Used",
+            "cost": "9.99",
+            "company": "apple"
+        },
+        {
+           
+            "name": "Beats",
+            "category": "Headphones",
+            "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+            "status": "sale",
+            "image": "/images/beats.png",
+            "author": "Tony Stark",
+            "condition": "New",
+            "cost": "0.99",
+            "company": "Beats"
+        },
+        {
+          
+            "name": "ThinkPad",
+            "category": "Laptop",
+            "details": "orem Ipsum is simply dummy text of the printing and typesetting industry",
+            "status": "sale",
+            "image": "/images/lenovo.jpg",
+            "author": "Shaishav  Maisuria",
+            "condition": "Used",
+            "cost": "9.99",
+            "company": "Lenovo"
+        },
+        {
+           
+            "name": "ThinkPad",
+            "category": "Laptop",
+            "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+            "status": "sale",
+            "image": "/images/hp.jpg",
+            "author": "Shaishav  Maisuria",
+            "condition": "Used",    
+            "cost": "9.99",
+            "company": "Lenovo"
+        }
+]

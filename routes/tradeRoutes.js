@@ -13,14 +13,14 @@ router.get('/',controller.index);
 router.post('/',controller.create);
 
 //GET page from 
-router.get('/:category/:id',controller.showEachTrade);
+router.get('/:id',controller.showEachTrade);
 
 // GET the edit page when clicked on edit
-router.get('/:category/:id/edit',controller.edit)
+router.get('/:id/edit',controller.edit)
 
 // PUT is used when edit page sent request to be change the object
-router.put('/:category/:id',controller.update);
+router.put('/:id',controller.update);
 
 //Delete is used to delete object 
-router.delete('/:category/:id',controller.delete);
+router.delete('/:id',controller.delete);
 module.exports=router;

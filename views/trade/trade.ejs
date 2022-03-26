@@ -15,9 +15,9 @@
             </p></div>
             <form>
             <div class="buttonChangeTrade">
-                <button class="buttonEditTrade" type="submit" formmethod="GET" formaction="/trades/<%= trade.category %>/<%= trade.id %>/edit">Edit</button>
+                <button class="buttonEditTrade" type="submit" formmethod="GET" formaction="/trades/<%= trade._id %>/edit">Edit</button>
             
-                <button class="buttonDeleteTrade" type="submit" formmethod="POST" formaction="/trades/<%= trade.category %>/<%= trade.id %>?_method=DELETE"> Delete  </button>
+                <button class="buttonDeleteTrade" type="submit" formmethod="POST" formaction="/trades/<%= trade._id %>?_method=DELETE"> Delete  </button>
             </div>
         </form>
         </div>
