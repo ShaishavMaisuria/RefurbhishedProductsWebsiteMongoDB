@@ -2,20 +2,23 @@ const mongoose= require('mongoose');
 const Schema = mongoose.Schema;
 const tradesSchema= new Schema( 
   
-    {
-        name: {type:String,required:[true, 'title is required']},
+    { category: {type:String,required:[true, 'category is required'],sort:{category:1 } },
+       
+        name: {type:String,required:[true, 'Product name is required']},
         author:{type:String,required:[true, 'author is required']},
-        details: {type:String,required:[true, 'content is required'],
-                     minlength:[10,'the content should have atleast 10 characters']},
-        category: {type:String,required:[true, 'category is required']},
+        cost: {type:mongoose.Decimal128 ,  min: 0, max: 1000, required:[true, 'cost is required']},
         image: {type:String,required:[true, 'image is required']},
         condition:{type:String,required:[true, 'condition is required']},
-        cost: {type:mongoose.Decimal128,required:[true, 'cost is required']},
-        company: {type:String,required:[true, 'company is required']}
+        company: {type:String,required:[true, 'company is required']},
+        details: {type:String,required:[true, 'content is required'],
+            minlength:[10,'the content should have atleast 10 characters']}
     },
    {timestamps:true}
-
+   
 );
+    
+// const val = mongoose.find().sort('-category');
+// console.log("value------------------:"+val);
 
 module.exports = mongoose.model('Trade',tradesSchema);
 

@@ -7,14 +7,14 @@
            
                     
                     <%  if(trades.length) {%>
-                        <h1> Refurbished <%= categoryName %> </h1>
+                        <h1> <%= categoryName %> </h1>
                         <div class="headphonesGrid">
                             <div class="grid-container-headphones">
                         <% trades.forEach(trade=>{ %>
                             <% if (trade.category=== categoryName){%>
                                
                                 
-
+                                
                                         <div class="cardView">
                                             <img src="<%=trade.image %>" alt="<%= trade.name %>" >
                                             <h1><%= trade.name %></h1>

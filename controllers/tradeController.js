@@ -7,12 +7,17 @@ exports.index=(req,res)=>{
     let categoryNames=[];
     // console.log(trades);
     model.distinct("category",function(err,results){
+        
         categoryNames=results;
+        categoryNames.sort();
     });
+
+    
     model.find()
     .then(
-        trades=>{
 
+        trades=>{
+console.log(trades);
         res.render('./trade/index',{trades,categoryNames});
         }
     )
@@ -34,6 +39,7 @@ exports.showEachTrade=(req,res,next)=>{
     .then(trade=>{
 
         if(trade){
+          
             console.log("**************************testing value reached");
             res.render('./trade/trade',{trade});
             // console.log("trades................"+trade)
@@ -50,9 +56,10 @@ exports.showEachTrade=(req,res,next)=>{
 
 
 // POST /trades: create a new story
-exports.create=(req,res)=>{
+exports.create=(req,res,next)=>{
 
     let trade = new model(req.body);
+    console.log("trades*/*/***/**/*/*/*"+trade.category);
     trade.save()
     .then(trade=> res.redirect('/trades'))
     .catch(err=>{
@@ -62,10 +69,6 @@ exports.create=(req,res)=>{
         }
         next(err);
     });
-    // let category='Laptop';
-    // model.save(trade);
-    // res.redirect('/trades');
-    // console.log("trades................"+trade)
 };
 // this method is used to edit the object retrived from id and category
 exports.edit=(req,res,next)=>{
@@ -75,7 +78,6 @@ exports.edit=(req,res,next)=>{
       let err = new Error("Invalid Story ID");
       err.status=400;
       return next(err);
-
   }
   model.findById(id)
   .then(trade=>{

@@ -1,0 +1,87 @@
+[{
+  "_id": {
+    "$oid": "623e650653dbaa41533cae2b"
+  },
+  "name": "Airpods",
+  "category": "Headphones",
+  "details": "   Lorem Ipsum is simply dummy text of the printing and typesetting industry   ",
+  "status": "availabl",
+  "image": "https://m.media-amazon.com/images/I/61+fe8F-vmL._AC_SL1000_.jpg",
+  "author": "Shaishav  Maisuria",
+  "condition": "Used",
+  "cost": {
+    "$numberDecimal": "9.99"
+  },
+  "company": "apple",
+  "updatedAt": {
+    "$date": "2022-03-26T01:14:58.595Z"
+  }
+},{
+  "_id": {
+    "$oid": "623e650653dbaa41533cae2c"
+  },
+  "name": "Beats",
+  "category": "Headphones",
+  "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+  "status": "sale",
+  "image": "/images/beats.png",
+  "author": "Tony Stark",
+  "condition": "New",
+  "cost": "0.99",
+  "company": "Beats"
+},{
+  "_id": {
+    "$oid": "623e650653dbaa41533cae2d"
+  },
+  "name": "ThinkPad",
+  "category": "Laptop",
+  "details": "orem Ipsum is simply dummy text of the printing and typesetting industry",
+  "status": "sale",
+  "image": "/images/lenovo.jpg",
+  "author": "Shaishav  Maisuria",
+  "condition": "Used",
+  "cost": "9.99",
+  "company": "Lenovo"
+},{
+  "_id": {
+    "$oid": "623e6b838cefcdf917694b66"
+  },
+  "name": "Shaishav Maisuria",
+  "author": "shaishav",
+  "details": "  This product has the details of apple pro max and the iPhone 13. You can exchange it if you want to.  ",
+  "category": "Headphones",
+  "image": "https://photos5.appleinsider.com/gallery/39490-75643-AirPods-Max-and-iPhone-12-Pro-xl.jpg",
+  "condition": "used",
+  "cost": {
+    "$numberDecimal": "0.99"
+  },
+  "company": "apple",
+  "createdAt": {
+    "$date": "2022-03-26T01:25:23.299Z"
+  },
+  "updatedAt": {
+    "$date": "2022-03-26T01:32:39.255Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "623e6db88cefcdf917694b8f"
+  },
+  "name": "Hp Laptop",
+  "author": "Ganesh",
+  "details": "  This product is for HP laptops and will be available to each users  ",
+  "category": "Laptop",
+  "image": "https://m.media-amazon.com/images/I/61CFBQbUeOS._AC_SY450_.jpg",
+  "condition": "new",
+  "cost": {
+    "$numberDecimal": "1000"
+  },
+  "company": "HP",
+  "createdAt": {
+    "$date": "2022-03-26T01:34:48.144Z"
+  },
+  "updatedAt": {
+    "$date": "2022-03-26T01:37:33.911Z"
+  },
+  "__v": 0
+}]

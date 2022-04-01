@@ -275,6 +275,7 @@ svg{
 .cost {
   color: grey;
   font-size: 22px;
+  word-break: break-all;
 }
 
 .cardView a.buttonViewDetails {
